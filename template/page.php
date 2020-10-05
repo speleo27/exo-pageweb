@@ -11,10 +11,10 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="h1"><?php $this->name?></h1>
+        <h1 class="h1"><?php echo $this->name?></h1>
     </div>
     <div class="container">
-        <div class="row col-3">
+        <div class="row ">
             <?php foreach(Article::getAllArticles() as  $article) {
                 $article->show();
             }

@@ -27,7 +27,7 @@
       $req->execute(array());
 
       while($data= $req->fetch(PDO::FETCH_ASSOC)){
-        array_push($articles,$data['titre'],$data['date_de_parution'],$data['auteur'],$data['contenu']);
+        array_push($articles,new Article($data['titre'],$data['date_de_parution'],$data['auteur'],$data['contenu']));
       }
       return $articles;
     }
