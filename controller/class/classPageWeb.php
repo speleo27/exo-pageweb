@@ -1,4 +1,5 @@
 <?php
+    require_once "classarticle.php";
     class Pageweb
     {
         private $name;
@@ -8,14 +9,11 @@
 
         }
 
-        public function add_css_file(){
-            $css= include "controller/css/style.css";
-            if ($css == 1) {
-              return $css;
-            }
-
+        public function show(){
+            include './template/page.php';
         }
 
+       
 
 
 

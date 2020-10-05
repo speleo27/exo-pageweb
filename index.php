@@ -1,9 +1,6 @@
 <?php
-require_once ""
-
-
-
-
-
-
+require_once "controller/class/classPageWeb.php";
+$page= new Pageweb("article");
+$page->show();
 ?>
+
